@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_extensions',
-    'api.files'
+    'api.authentication'
 ]
 
 MIDDLEWARE = [
@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
-AUTH_USER_MODEL = 'files.User'
+AUTH_USER_MODEL = 'authentication.User'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases

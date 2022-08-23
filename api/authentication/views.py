@@ -7,7 +7,7 @@ from rest_framework.views import APIView
 # Create your views here.
 
 
-class FilesAPIView(APIView):
+class AuthAPIView(APIView):
     permission_classes = (AllowAny,)
 
     def get(self, request):
