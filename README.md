@@ -14,9 +14,10 @@ File uploader empowered by Django
 
 ### In Progress
 
-- [ ] Create docs
+- [ ] Create app files
 
 ### Done ✓
 
+- [x] Create docs
 - [x] (POST) /api/auth/login
 - [x] Login page
