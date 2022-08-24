@@ -9,6 +9,8 @@ File uploader empowered by Django
 ### Todo
 
 - [ ] (GET) /files
+- [ ] Dockerfile
+- [ ] ?Continuous Delivery?
 
 ### In Progress
 
