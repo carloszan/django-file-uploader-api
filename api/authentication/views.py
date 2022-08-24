@@ -21,7 +21,7 @@ class LoginAPIView(APIView):
     serializer_class = LoginSerializer
 
     def post(self, request):
-        user = request.data.get('user', {})
+        user = request.data or None
         print(user)
 
         serializer = self.serializer_class(data=user)
