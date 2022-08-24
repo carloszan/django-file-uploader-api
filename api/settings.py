@@ -72,6 +72,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'api.authentication.backends.JWTAuthentication',
+    ),
+}
+
 AUTH_USER_MODEL = 'authentication.User'
 
 # Database
