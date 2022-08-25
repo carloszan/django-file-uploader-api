@@ -9,12 +9,12 @@ File uploader empowered by Django
 ### Todo
 
 - [ ] (GET) /files
-- [ ] Dockerfile
+- [ ] Create app Files
 - [ ] ?Continuous Delivery?
 
 ### In Progress
 
-- [ ] Create app files
+- [ ] Dockerfile
 
 ### Done ✓
 
