@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-+%%gvm4xgvg%co^(_d1j#7jl(+44v97vg21n36t*5nem(p@t$w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api.propylon.czar.dev', 'propylon.czar.dev']
+ALLOWED_HOSTS = ['api.propylon.czar.dev',
+                 'propylon.czar.dev', 'localhost']
 
 
 # Application definition
@@ -39,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_extensions',
-    'api.authentication'
+    'api.authentication',
+    'api.files'
 ]
 
 MIDDLEWARE = [
