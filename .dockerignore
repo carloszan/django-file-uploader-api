@@ -1,0 +1,7 @@
+*.pyc
+migrations/
+__pycache__
+.idea
+*.DS_Store
+.env
+static
