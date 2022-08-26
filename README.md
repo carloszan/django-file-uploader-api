@@ -1,5 +1,7 @@
 File uploader empowered by Django
 
+![alt text](docs/v1.png)
+
 ### Docker build
 
 ```
