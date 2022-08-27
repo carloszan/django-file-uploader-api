@@ -9,9 +9,15 @@ from .models import File
 
 
 class FilesAPIView(APIView):
-    permission_classes = (AllowAny,)
+    permission_classes = (IsAuthenticated,)
 
     def get(self, request):
-        files = list(File.objects.all().values())
+        user = request.user
+
+        files = []
+        if(user.is_authenticated):
+            files = list(File.objects.filter(user=user).values())
+        else:
+            files = []
 
         return JsonResponse(files, safe=False, status=status.HTTP_200_OK)

@@ -22,7 +22,6 @@ class LoginAPIView(APIView):
 
     def post(self, request):
         user = request.data or None
-        print(user)
 
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
