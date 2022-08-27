@@ -22,11 +22,12 @@ docker run -d -p 8000:8000 carloszan/django-file-uploader-api:v1
 
 ### Todo
 
+- [ ] (GET) /files
 - [ ] ?Continuous Delivery?
 
 ### In Progress
 
-- [ ] (GET) /files
+- [ ] (POST) /files
 
 ### Done ✓
 
