@@ -31,6 +31,6 @@ class FilesAPIView(APIView):
                         file_url="abc", pub_date=timezone.now(), user=request.user)
 
             file.save()
-            return Response(status=201)
+            return Response({'id': '630b5e07c6997747ea7dc97b'}, status=201)
         except:
             return Response(status=403)
